@@ -1,0 +1,94 @@
+:root {
+    --darkgrey: #343A40;
+    --orange: #EB6F4C;
+    --white: #F8F9FA;
+    --black: #212529;
+    --lightblue: #007BFF;
+}
+
+body {
+    margin: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black, black);
+}
+
+.top-nav > h3 {
+    color: var(--white, white);
+    font-size: 1.3rem;
+}
+
+.search-weather-form {
+    display: flex;
+}
+
+.search-weather-form > input {
+    padding: 5px;
+    margin: 0;
+    border: 2px solid var(--white, white);
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    width: 40vw;
+    font-size: 1.1rem;
+}
+
+.search-weather-form > input:focus {
+    outline: none;
+}
+
+.search-weather-form > button {
+    padding: 0 10px;
+    background-color: var(--orange, orange);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: var(--white, white);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.search-weather-form > button:hover {
+    cursor: pointer;
+    background-color: #ee5f37
+}
+
+#current-temp-container {
+    width: 40vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--black, black);
+    padding: 15px;
+    color: var(--white, white);
+
+}
+
+#current-temp-container > h2,
+#current-temp-container > h4,
+#current-temp-container > h3 {
+    margin: 0;
+}
+
+#current-temp-container > h3 {
+    font-size: 1.8rem;
+}
+
+#current-temp-container > h2 {
+    font-size: 3rem;
+}
+
+.high-low-container {
+    display: flex;
+    gap: 10px;
+}
+
+#current-temp-container > img {
+    width: 40%;
+}
