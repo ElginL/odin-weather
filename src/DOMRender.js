@@ -106,10 +106,10 @@ const displayDetailedCurrentWeather = async (location) => {
     const extraContainer = document.getElementById("extra-weather-container");
     extraContainer.classList.add("detailed-weather-container");
 
-    const feelsLikeContainer = createContainer("Feels Like", weather.feels_like, DEGREE_SYMBOL, "../images/temperature.png");
-    const windSpeedContainer = createContainer("Wind Speed", weather.windSpeed, "km/h", "../images/air.png");
-    const humidityContainer = createContainer("Humidity", weather.humidity, "%", "../images/humidity.png");
-    const pressureContainer = createContainer("Pressure", weather.pressure, "pa", "../images/pressure.png");
+    const feelsLikeContainer = createContainer("Feels Like", weather.feels_like, DEGREE_SYMBOL, "./images/temperature.png");
+    const windSpeedContainer = createContainer("Wind Speed", weather.windSpeed, "km/h", "./images/air.png");
+    const humidityContainer = createContainer("Humidity", weather.humidity, "%", "./images/humidity.png");
+    const pressureContainer = createContainer("Pressure", weather.pressure, "pa", "./images/pressure.png");
 
     extraContainer.append(feelsLikeContainer, windSpeedContainer, humidityContainer, pressureContainer);
 
