@@ -51,8 +51,8 @@ const displayFlag = country => {
     const currentTempContainer = document.getElementById("current-temp-container");
     
     const URL = `https://countryflagsapi.com/png/${country}`;
-
-    const image = document.createElement("img");
+    
+    const image = new Image();
     image.src = URL;
 
     currentTempContainer.appendChild(image);
